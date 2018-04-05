@@ -12,7 +12,7 @@
 cd ..
 
 # Update dependencies
-# carthage update --platform ios
+carthage update --platform ios
 
 # Clear existing LFS tracked files
 rm .gitattributes
