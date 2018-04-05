@@ -12,7 +12,7 @@
 cd ..
 
 # Update dependencies
-carthage update --platform ios
+# carthage update --platform ios
 
 # Clear existing LFS tracked files
 rm .gitattributes
@@ -24,5 +24,5 @@ do
 	binaryName=`echo "$framework" | rev | cut -d "/" -f1 | rev | cut -d "." -f1`
 	
 	# Track binary under Git LFS	
-	git lfs track "$framework"/"$binaryName"
+	git lfs track **/"$binaryName"
 done
